@@ -8,6 +8,15 @@ homepage = "https://github.com/acheronfail/human_id"
 repository = "https://github.com/acheronfail/human_id"
 readme = "README.md"
 license = "Unlicense OR MIT"
+default-run = "3wid"
+
+[[bin]]
+name = "3wid"
+test = false
+bench = false
+required-features = [ "structopt" ]
 
 [dependencies]
 rand = "0.7.3"
+
+structopt = { version = "0.3", optional = true }
